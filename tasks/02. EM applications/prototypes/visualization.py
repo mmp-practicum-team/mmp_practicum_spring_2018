@@ -15,7 +15,7 @@ def highlight_mask(image, mask):
     mask_vec = mask.ravel()
 
     im_vec = im.reshape((M * N, 3))
-    im_vec[mask_vec, :] /= 2.0
+    im_vec[mask_vec, :] //= 2
     im_vec[mask_vec, 0] += 128
 
     return im
