@@ -50,7 +50,7 @@ class MixtureModel:
         else:
             pass
     
-    def EM_fit(self, data, n_components, max_iter=10, tol=1e-3,
+    def EM_fit(self, data, max_iter=10, tol=1e-3,
                w_init=None, m_init=None, s_init=None, trace=False):
         """
         Parametrs:
