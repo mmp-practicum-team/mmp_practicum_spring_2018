@@ -15,7 +15,7 @@ class LFM:
             max_iter: int, maximum number of iterations
             
             tol: float, tolerance of the algorithm
-            (if \sum_u \sum_d p_{ud}^2 + \sum_i \sum_d q_{id}^2 < tol then break)
+            (if \sum_u \sum_d (p^{new}_{ud} - p^{old}_{ud})^2 + \sum_i \sum_d (q^{new}_{id} - q^{old}_{id})^2 < tol then break)
             
             verbose: bool, if true then print additional information during the optimization
         """
